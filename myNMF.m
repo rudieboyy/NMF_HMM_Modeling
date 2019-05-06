@@ -21,9 +21,7 @@ function [W, H, KL] = myNMF(V, r, nIter, bUpdateW, bUpdateH,initW, initH)
 %               elements). KL(1) is the KL divergence using the initial W
 %               and H.
 %
-% Author: Zhiyao Duan
-% Created: 10/9/2013
-% Last modified: 10/2/2014
+
 
 [m,n] = size(V);
 if nargin<7 initH = rand(r, n); end     % randomly initialize H

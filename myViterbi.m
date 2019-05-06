@@ -20,9 +20,7 @@ function path = myViterbi(transMat, loglikeMat, initProb)
 %                       the maximal posterior probability, P(S_1, ..., S_N
 %                       | O_1, ... O_N). A column vector with nObserv elements.
 %
-% Author: XXX
-% Created: XXX
-% Last modified: XXX
+
 
 if nargin<3     % use a uniform distribution if the initial probability is not given
     initProb = ones(size(transMat,1),1)/size(transMat,1); 
